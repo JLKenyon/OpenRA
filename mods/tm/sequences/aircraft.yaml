@@ -41,6 +41,11 @@ orcatran:
 	icon:
 		Filename: crryicon.shp
 
+dshp:
+	Inherits: ^VehicleOverlays
+	icon:
+		Filename: crryicon.shp
+
 pod:
 	Inherits: ^VehicleOverlays
 	idle:

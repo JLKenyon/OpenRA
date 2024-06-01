@@ -55,7 +55,9 @@ notification-bridge-repaired = Bridge repaired.
 ## aircraft.yaml
 actor-dpod-name = Drop Pod
 actor-dpod2-name = Drop Pod
-actor-dshp-name = Dropship
+actor-dshp =
+   .name = Dropship
+   .description = It is a Dropship
 
 actor-orca =
    .name = Orca Fighter
@@ -70,7 +72,9 @@ actor-orcab =
       Strong vs Buildings, Vehicles
       Weak vs Infantry, Aircraft
 
-actor-orcatran-name = Orca Transport
+actor-orcatran =
+   .name = Orca Transport
+   .description = Orca Transport
 
 actor-trnsport =
    .name = Carryall

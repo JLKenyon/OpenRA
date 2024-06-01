@@ -93,6 +93,13 @@ DSHP:
 		Name: actor-dshp-name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
+	Buildable:
+		Queue: Air
+		BuildPaletteOrder: 10
+		Prerequisites: ~gahpad
+		Description: actor-dshp.description
+	Selectable:
+		Bounds: 905, 1448
 	Aircraft:
 		IdleBehavior: Land
 		Pitch: 0
@@ -109,6 +116,7 @@ DSHP:
 		HP: 20000
 	Armor:
 		Type: Heavy
+	RenderSprites:
 	RevealsShroud:
 		Range: 6c0
 		Type: CenterPosition
@@ -261,13 +269,15 @@ ORCATRAN:
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: actor-orcatran-name
+		Name: actor-orcatran.name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: Air
 		BuildPaletteOrder: 50
-		Prerequisites: ~disabled
+		Prerequisites: ~gahpad
+	Selectable:
+		Bounds: 905, 1448
 	RenderSprites:
 	Aircraft:
 		TurnSpeed: 20
