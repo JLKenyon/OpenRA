@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Orders;
@@ -56,6 +57,7 @@ namespace OpenRA.Mods.Common.Traits
 		public SequencePlaceBuildingPreviewPreview(WorldRenderer wr, ActorInfo ai, SequencePlaceBuildingPreviewInfo info, TypeDictionary init)
 			: base(wr, ai, info)
 		{
+			Console.WriteLine("SequencePlaceBuildingPreviewPreview");
 			this.info = info;
 			var ownerName = init.Get<OwnerInit>().InternalName;
 			var faction = init.Get<FactionInit>().Value;
@@ -73,6 +75,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		protected override IEnumerable<IRenderable> RenderInner(WorldRenderer wr, CPos topLeft, Dictionary<CPos, PlaceBuildingCellType> footprint)
 		{
+			Console.WriteLine("RenderInner");
 			if (info.FootprintUnderPreview != PlaceBuildingCellType.None)
 				foreach (var r in RenderFootprint(wr, topLeft, footprint, info.FootprintUnderPreview))
 					yield return r;

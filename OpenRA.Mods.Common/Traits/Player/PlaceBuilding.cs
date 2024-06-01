@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -120,6 +121,7 @@ namespace OpenRA.Mods.Common.Traits
 
 				if (os == "LineBuild")
 				{
+					Console.WriteLine("LineBuild: " + actorInfo.Name + " at " + targetLocation);
 					// Build the parent actor first
 					var placed = w.CreateActor(actorInfo.Name, new TypeDictionary
 					{
@@ -165,6 +167,7 @@ namespace OpenRA.Mods.Common.Traits
 				}
 				else if (os == "PlacePlug")
 				{
+					Console.WriteLine("PlacePlug: " + actorInfo.Name + " at " + targetLocation);
 					var plugInfo = actorInfo.TraitInfoOrDefault<PlugInfo>();
 					if (plugInfo == null)
 						return;
@@ -188,6 +191,7 @@ namespace OpenRA.Mods.Common.Traits
 				}
 				else
 				{
+					Console.WriteLine("PlaceBuilding: " + actorInfo.Name + " at " + targetLocation);
 					if (!self.World.CanPlaceBuilding(targetLocation, actorInfo, buildingInfo, null)
 						|| !buildingInfo.IsCloseEnoughToBase(self.World, order.Player, actorInfo, targetLocation))
 						return;

@@ -515,6 +515,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		protected virtual void PauseProduction(string itemName, bool paused)
 		{
+			Console.WriteLine("PauseProduction: " + itemName + " " + paused);
 			Queue.FirstOrDefault(a => a.Item == itemName)?.Pause(paused);
 		}
 
@@ -527,6 +528,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		protected bool CancelProductionInner(string itemName)
 		{
+			Console.WriteLine("CancelProduction: " + itemName);
 			var item = Queue.LastOrDefault(a => a.Item == itemName);
 
 			if (item != null)
@@ -552,6 +554,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		public void EndProduction(ProductionItem item)
 		{
+			Console.WriteLine("EndProduction: " + item.Item);
 			Queue.Remove(item);
 
 			if (item.Infinite)
@@ -560,6 +563,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		protected virtual void BeginProduction(ProductionItem item, bool hasPriority)
 		{
+			Console.WriteLine("BeginProduction: " + item.Item);
 			if (Queue.Any(i => i.Item == item.Item && i.Infinite))
 				return;
 
@@ -605,6 +609,7 @@ namespace OpenRA.Mods.Common.Traits
 		// Returns false if the unit can't be built
 		protected virtual bool BuildUnit(ActorInfo unit)
 		{
+			Console.WriteLine("BuildUnit: " + unit.Name);
 			var mostLikelyProducerTrait = MostLikelyProducer().Trait;
 
 			// Cannot produce if I'm dead or trait is disabled

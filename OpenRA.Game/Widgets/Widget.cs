@@ -433,9 +433,13 @@ namespace OpenRA.Widgets
 
 			// Send the event to the deepest children first and bubble up if unhandled
 			// PERF: Avoid LINQ.
-			for (var i = Children.Count - 1; i >= 0; --i)
-				if (Children[i].HandleMouseInputOuter(mi))
+			for (var i = Children.Count - 1; i >= 0; --i) {
+				// Console.WriteLine($"Trying mouse event in {Children[i].Id}");
+				if (Children[i].HandleMouseInputOuter(mi)){
+					// Console.WriteLine($"Handling mouse input for child {Children[i].Id}");
 					return true;
+				}
+			}
 
 			if (IgnoreChildMouseOver)
 				Ui.MouseOverWidget = oldMouseOver;
