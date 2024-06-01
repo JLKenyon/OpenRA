@@ -21,7 +21,7 @@ MCV:
 		Speed: 42
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 6c0
+		Range: 16c0
 		MaxHeightDelta: 3
 	MustBeDestroyed:
 		RequiredForShortGame: true
