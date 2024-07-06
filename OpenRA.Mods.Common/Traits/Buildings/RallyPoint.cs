@@ -102,7 +102,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		public Order IssueOrder(Actor self, IOrderTargeter order, in Target target, bool queued)
 		{
-			Console.WriteLine("RallyPoint.IssueOrder: " + order.OrderID + " at " + target.CenterPosition);
+			// Console.WriteLine("RallyPoint.IssueOrder: " + order.OrderID + " at " + target.CenterPosition);
 			if (order.OrderID == OrderID)
 			{
 				Game.Sound.PlayNotification(self.World.Map.Rules, self.Owner, "Speech", Info.Notification, self.Owner.Faction.InternalName);
@@ -120,7 +120,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		public void ResolveOrder(Actor self, Order order)
 		{
-			Console.WriteLine("RallyPoint.ResolveOrder: " + order.OrderString + " at " + order.Target.CenterPosition);
+			// Console.WriteLine("RallyPoint.ResolveOrder: " + order.OrderString + " at " + order.Target.CenterPosition);
 			if (order.OrderString == "Stop")
 			{
 				Path.Clear();
@@ -146,7 +146,7 @@ namespace OpenRA.Mods.Common.Traits
 
 		void INotifyAddedToWorld.AddedToWorld(Actor self)
 		{
-			Console.WriteLine("RallyPoint: " + self.Info.Name + " at " + self.Location);
+			// Console.WriteLine("RallyPoint: " + self.Info.Name + " at " + self.Location);
 			self.World.AddFrameEndTask(w => w.Add(effect));
 		}
 
