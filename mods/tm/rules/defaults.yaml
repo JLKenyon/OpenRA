@@ -922,7 +922,7 @@
 		MaximumPitch: 120
 		LandableTerrainTypes: Clear, Road, Rail, DirtRoad, Rough, Tiberium, BlueTiberium, Veins
 		Crushes: crate, infantry
-		MoveIntoShroud: false
+		MoveIntoShroud: true
 		CanHover: true
 		CanSlide: true
 		VTOL: true
@@ -936,7 +936,7 @@
 		Type: GroundPosition
 	AttackMove:
 		Voice: Move
-		MoveIntoShroud: false
+		MoveIntoShroud: true
 	ActorLostNotification:
 		TextNotification: notification-unit-lost
 	BodyOrientation:
