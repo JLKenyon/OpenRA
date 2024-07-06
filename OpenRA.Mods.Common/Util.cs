@@ -104,6 +104,8 @@ namespace OpenRA.Mods.Common
 		/// <summary>Rounds the given facing value to the nearest quantized facing.</summary>
 		public static WAngle QuantizeFacing(WAngle facing, int facings)
 		{
+			if (facings == 0)
+				return WAngle.Zero;
 			return new WAngle(IndexFacing(facing, facings) * (1024 / facings));
 		}
 
