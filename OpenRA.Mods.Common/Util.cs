@@ -75,6 +75,9 @@ namespace OpenRA.Mods.Common
 		/// </summary>
 		public static int IndexFacing(WAngle facing, int numFrames)
 		{
+			if (numFrames == 0) {
+				return 0;
+			}
 			// 1024 here is the max angle, so we divide the max angle by the total number of facings (numFrames)
 			var step = 1024 / numFrames;
 			var a = (facing.Angle + step / 2) & 1023;
