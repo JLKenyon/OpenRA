@@ -1474,7 +1474,7 @@ GASPOT:
 	Health:
 		HP: 40000
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS-BRIGHT:
 		Sequence: idle-lights-bright
@@ -1502,7 +1502,7 @@ GALITE:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 2c0
+		Range: 4c0
 		MaxHeightDelta: 3
 	Power:
 		Amount: 0
@@ -1706,7 +1706,7 @@ GAICBM:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Transforms:
 		IntoActor: icbm

@@ -20,7 +20,7 @@ GAPOWR:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !empdisable
@@ -127,7 +127,7 @@ GAPILE:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	RallyPoint:
 		Palette: mouse
@@ -222,7 +222,7 @@ GAWEAP:
 	Health:
 		HP: 100000
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	Armor:
 		Type: Heavy
@@ -298,7 +298,7 @@ GAHPAD:
 	Health:
 		HP: 60000
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Exit@1:
 		SpawnOffset: 0,-256,0
@@ -363,7 +363,7 @@ GADEPT:
 	Health:
 		HP: 110000
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Reservable:
 	RepairsUnits:
@@ -467,7 +467,7 @@ GARADR:
 		Range: 20c0
 	RenderDetectionCircle:
 	RevealsShroud:
-		Range: 28c0
+		Range: 18c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@DISH:
 		RequiresCondition: !build-incomplete
@@ -504,7 +504,7 @@ GATECH:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !disabled
@@ -553,7 +553,7 @@ GAPLUG:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	IonCannonPower:
 		Cursor: ioncannon

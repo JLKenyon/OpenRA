@@ -23,7 +23,7 @@ BGGY:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	Armament:
 		Weapon: RaiderCannon
@@ -62,7 +62,7 @@ BIKE:
 		Type: Wood
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Armament@PRIMARY:
 		Weapon: BikeMissile
@@ -124,7 +124,7 @@ TTNK:
 	WithMuzzleOverlay:
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	RenderSprites:
 		Image: ttnk
@@ -319,7 +319,7 @@ REPAIR:
 		TurnSpeed: 20
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Armament:
 		Weapon: Repair
@@ -377,7 +377,7 @@ WEED:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	-WithVoxelBody:
 	WithVoxelUnloadBody:
@@ -417,7 +417,7 @@ SAPC:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel && !submerged
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry
@@ -468,7 +468,7 @@ SUBTANK:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel && !submerged
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Armament:
 		Weapon: FireballLauncher
@@ -519,7 +519,7 @@ STNK:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cloak:
 		InitialDelay: 90
@@ -582,11 +582,11 @@ SGEN:
 		RequireForceMoveCondition: !undeployed
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel && undeployed
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	RevealsShroud@DEPLOYED:
 		RequiresCondition: inside-tunnel || deployed
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	WithMakeAnimation:
 	GrantCondition@PREVIEWWORKAROUND:

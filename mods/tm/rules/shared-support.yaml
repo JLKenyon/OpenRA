@@ -19,7 +19,7 @@ NAPULS:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 8c0
+		Range: 16c0
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896

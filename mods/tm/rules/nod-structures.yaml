@@ -20,7 +20,7 @@ NAPOWR:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !empdisable
@@ -63,7 +63,7 @@ NAAPWR:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !empdisable
@@ -108,7 +108,7 @@ NAHAND:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Exit@1:
 		SpawnOffset: 384,768,0
@@ -203,7 +203,7 @@ NAWEAP:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	RallyPoint:
 		Palette: mouse
@@ -262,7 +262,7 @@ NAHPAD:
 	Health:
 		HP: 60000
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Exit@1:
 		SpawnOffset: 0,-256,0
@@ -378,7 +378,7 @@ NATECH:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !disabled
@@ -417,7 +417,7 @@ NASTLH:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@pulse:
 		RequiresCondition: !build-incomplete && !empdisable && !disabled
@@ -461,7 +461,7 @@ NATMPL:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	Power:
 		Amount: -200
@@ -515,7 +515,7 @@ NAMISL:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	WithIdleOverlay@LIGHTS:
 		RequiresCondition: !build-incomplete && !disabled
 		Sequence: idle-lights
@@ -587,7 +587,7 @@ NAWAST:
 	Health:
 		HP: 40000
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	Refinery:
 	DockHost:

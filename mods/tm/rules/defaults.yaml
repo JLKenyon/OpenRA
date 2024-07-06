@@ -418,7 +418,7 @@
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 		MaxHeightDelta: 3
 	RenderSprites:
 		Palette: terraindecoration
@@ -567,7 +567,7 @@
 		Cost: 10
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 2c0
+		Range: 4c0
 		MaxHeightDelta: 3
 	Mobile:
 		Voice: Move
@@ -701,7 +701,7 @@
 	Inherits@1: ^Infantry
 	Inherits@2: ^RegularInfantryDeath
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	MustBeDestroyed:
 	TakeCover:
 		DamageModifiers:
@@ -731,7 +731,7 @@
 		EmptyWeapon: CyborgExplode
 	DeathSounds:
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	MustBeDestroyed:
 	TakeCover:
 		RequiresCondition: critical
@@ -1161,9 +1161,9 @@
 	RenderRangeCircle:
 	RenderDetectionCircle:
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 	DetectCloaked:
-		Range: 5c0
+		Range: 10c0
 	Targetable:
 		TargetTypes: Ground, Building, C4, Defense
 	-Capturable:
@@ -1196,7 +1196,7 @@
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 		RequiresCondition: !inside-tunnel
 	Selectable:

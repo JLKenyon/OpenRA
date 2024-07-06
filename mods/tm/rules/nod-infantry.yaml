@@ -31,7 +31,7 @@ E3:
 	WithSplitAttackPaletteInfantryBody:
 		DefaultAttackSequence: attack
 	RevealsShroud:
-		Range: 7c0
+		Range: 14c0
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
@@ -64,7 +64,7 @@ CYBORG:
 		HP: 30000
 	Passenger:
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 	Armament:
 		Weapon: Vulcan3
 	AttackFrontal:
@@ -103,7 +103,7 @@ CYC2:
 		HP: 50000
 	Passenger:
 	RevealsShroud:
-		Range: 7c0
+		Range: 14c0
 	Armament:
 		Weapon: CyCannon
 		LocalOffset: 240,120,966
@@ -140,4 +140,4 @@ MHIJACK:
 		CaptureTypes: Vehicle
 		PlayerExperience: 10
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0

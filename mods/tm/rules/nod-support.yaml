@@ -68,7 +68,7 @@ NAPOST:
 	Power:
 		Amount: -25
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	GrantCondition@IDISABLE:
 		RequiresCondition: lowpower || powerdown || empdisable
 		Condition: disabled
@@ -185,7 +185,7 @@ NALASR:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 7c0
+		Range: 14c0
 	DetectCloaked:
 		Range: 3c0
 	Turreted:

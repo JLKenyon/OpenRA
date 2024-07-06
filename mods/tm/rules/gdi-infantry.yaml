@@ -30,7 +30,7 @@ E2:
 	WithSplitAttackPaletteInfantryBody:
 		DefaultAttackSequence: attack
 	RevealsShroud:
-		Range: 7c0
+		Range: 14c0
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
@@ -61,7 +61,7 @@ MEDIC:
 	Voiced:
 		VoiceSet: Medic
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 	Mobile:
 		Speed: 56
 	Health:
@@ -115,7 +115,7 @@ JUMPJET:
 	Passenger:
 		CustomPipType: green
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 	Armament:
 		Weapon: JumpCannon
 	-Crushable:
@@ -246,7 +246,7 @@ GHOST:
 		HP: 20000
 	Passenger:
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 	Armament:
 		Weapon: LtRail
 		LocalOffset: 120,0,543

@@ -15,7 +15,7 @@
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 		RequiresCondition: !inside-tunnel
 	Turreted:
@@ -54,7 +54,7 @@
 		Speed: 56
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 
 TRUCKA:
@@ -79,7 +79,7 @@ ICBM:
 		TurnSpeed: 20
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 7c0
+		Range: 14c0
 		MaxHeightDelta: 3
 	Transforms:
 		IntoActor: gaicbm
@@ -106,7 +106,7 @@ BUS:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry
@@ -132,7 +132,7 @@ PICK:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry
@@ -158,7 +158,7 @@ CAR:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry
@@ -184,7 +184,7 @@ WINI:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry

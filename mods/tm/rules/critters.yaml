@@ -16,7 +16,7 @@ DOGGIE:
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	Mobile:
 		Speed: 113
 	Voiced:
@@ -92,7 +92,7 @@ VISC_LRG:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 4c0
+		Range: 8c0
 	Armament:
 		Weapon: SlimeAttack
 		FireDelay: 10
@@ -119,7 +119,7 @@ JFISH:
 	Health:
 		HP: 50000
 	RevealsShroud:
-		Range: 5c0
+		Range: 10c0
 	Mobile:
 		Speed: 72
 		Locomotor: hover

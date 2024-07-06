@@ -24,7 +24,7 @@ APC:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 5c0
+		Range: 10c0
 		MaxHeightDelta: 3
 	Cargo:
 		Types: Infantry
@@ -78,7 +78,7 @@ HVR:
 		Type: Wood
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 7c0
+		Range: 14c0
 		MaxHeightDelta: 3
 	Armament:
 		Weapon: HoverMissile
@@ -131,7 +131,7 @@ SMECH:
 		Type: Light
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	AttackFrontal:
 		Voice: Attack
@@ -186,7 +186,7 @@ MMCH:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 8c0
+		Range: 16c0
 		MaxHeightDelta: 3
 	BodyOrientation:
 		QuantizedFacings: 32
@@ -250,7 +250,7 @@ HMEC:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 8c0
+		Range: 16c0
 		MaxHeightDelta: 3
 	AttackFrontal:
 		Voice: Attack
@@ -297,7 +297,7 @@ SONIC:
 		Type: Heavy
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 7c0
+		Range: 14c0
 		MaxHeightDelta: 3
 	Armament:
 		Weapon: SonicZap
@@ -349,7 +349,7 @@ JUGG:
 		TerrainOrientationAdjustmentMargin: -1
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 9c0
+		Range: 18c0
 		MaxHeightDelta: 3
 	RenderVoxels:
 		LightAmbientColor: 0.4, 0.4, 0.4
@@ -447,7 +447,7 @@ MOBILEMP:
 		Offset: 0,0,-256
 	RevealsShroud:
 		RequiresCondition: !inside-tunnel
-		Range: 6c0
+		Range: 12c0
 		MaxHeightDelta: 3
 	GrantConditionOnDeployWithCharge:
 		Voice: Move
