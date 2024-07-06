@@ -467,7 +467,7 @@ GARADR:
 		Range: 20c0
 	RenderDetectionCircle:
 	RevealsShroud:
-		Range: 18c0
+		Range: 24c0
 		MaxHeightDelta: 3
 	WithIdleOverlay@DISH:
 		RequiresCondition: !build-incomplete
