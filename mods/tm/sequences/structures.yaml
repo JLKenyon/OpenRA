@@ -1840,6 +1840,103 @@ gavulc:
 	icon:
 		Filename: twr1icon.shp
 
+gavulc2:
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: gtctwr_b.shp
+			SNOW: gactwr_b.shp
+		Offset: 0, -12, 12
+		DepthSprite: isodepth.shp
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	dead:
+		Start: 2
+		ShadowStart: 5
+		Tick: 400
+	invisible:
+		Filename: null.shp
+		TilesetFilenames:
+	idle-lights:
+		TilesetFilenames:
+			TEMPERATE: gtctwr_a.shp
+			SNOW: gactwr_a.shp
+		Length: 6
+		Tick: 200
+	idle-lights-bright:
+		TilesetFilenames:
+			TEMPERATE: gtctwr_a.shp
+			SNOW: gactwr_a.shp
+		Length: 6
+		Tick: 200
+		IgnoreWorldTint: True
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtctwrmk.shp
+			SNOW: gactwrmk.shp
+		Length: 11
+		ShadowStart: 11
+	make-bright:
+		TilesetFilenames:
+			TEMPERATE: gtctwrmk.shp
+			SNOW: gactwrmk.shp
+		Length: 11
+		ZOffset: 1
+		IgnoreWorldTint: True
+	turret-vulcan:
+		TilesetFilenames:
+			TEMPERATE: gtctwr_b.shp
+			SNOW: gactwr_b.shp
+		Facings: 32
+	muzzle:
+		TilesetFilenames:
+		Combine:
+			0:
+				Filename: mgun-n.shp
+				Length: 6
+			1:
+				Filename: mgun-nw.shp
+				Length: 6
+			2:
+				Filename: mgun-w.shp
+				Length: 6
+			3:
+				Filename: mgun-sw.shp
+				Length: 6
+			4:
+				Filename: mgun-s.shp
+				Length: 6
+			5:
+				Filename: mgun-se.shp
+				Length: 6
+			6:
+				Filename: mgun-e.shp
+				Length: 6
+			7:
+				Filename: mgun-ne.shp
+				Length: 6
+		Facings: 8
+		Length: 6
+		Offset: 0, 0, 12
+		IgnoreWorldTint: True
+	emp-overlay:
+		Filename: emp_fx01.shp
+		TilesetFilenames:
+		Length: *
+		Offset: 0, 0, 13
+		ZOffset: 512
+		BlendMode: Additive
+		IgnoreWorldTint: True
+		DepthSprite:
+	icon:
+		Filename: twr1icon.shp
+		TilesetFilenames:
+		Offset: 0, 0
+		DepthSprite:
+
+
 garock:
 	place:
 		TilesetFilenames:

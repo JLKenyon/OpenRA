@@ -215,32 +215,30 @@ GAVULC2:
 	BodyOrientation:
 		QuantizedFacings: 32
 	DetectCloaked:
-		RequiresCondition: !empdisable && !disabled && (tower.vulcan || tower.rocket || tower.sam)
+		RequiresCondition: !empdisable && !disabled
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
 		RealignDelay: -1
 	AttackTurreted:
-		RequiresCondition: !build-incomplete && (tower.vulcan || tower.rocket || tower.sam)
+		RequiresCondition: true
 		PauseOnCondition: empdisable || disabled
 	WithSpriteTurret:
-		RequiresCondition: !build-incomplete && tower.vulcan
 		Recoils: false
 		Sequence: turret-vulcan
 	Armament:
-		RequiresCondition: tower.vulcan
 		Weapon: VulcanTower
 		LocalOffset: 588,120,1358, 588,-120,1358
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-		RequiresCondition: !build-incomplete && tower.vulcan
+		RequiresCondition: true
 	WithIdleOverlay@LIGHTS:
-		RequiresCondition: !build-incomplete && !disabled
+		RequiresCondition: !disabled
 		Sequence: idle-lights
 		Palette: player-nobright
 		IsPlayerPalette: True
 	WithIdleOverlay@LIGHTS-BRIGHT:
-		RequiresCondition: !build-incomplete && !disabled
+		RequiresCondition: !disabled
 		Sequence: idle-lights-bright
 		Palette: bright
 	WithMakeOverlay@MAKE-BRIGHT:
@@ -248,11 +246,8 @@ GAVULC2:
 		Palette: bright
 	LineBuildNode:
 		Types: turret
-	Power@base:
-		RequiresCondition: !disabled
-		Amount: -10
 	Power:
-		RequiresCondition: !disabled && (tower.vulcan || tower.rocket || tower.sam)
+		RequiresCondition: !disabled
 		Amount: -20
 	IsometricSelectable:
 		Height: 48
